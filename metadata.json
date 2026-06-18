@@ -1,0 +1,6 @@
+{
+  "name": "Business LaunchPad Suite",
+  "description": "A comprehensive business suite with social media management, task workflows, team collaboration, document generation, and professional training resources.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
