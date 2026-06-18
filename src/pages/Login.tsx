@@ -44,9 +44,9 @@ const Login: React.FC = () => {
             <div className="flex justify-center mb-6">
               <div className="p-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl neon-glow">
                 <img 
-                  src="/Screenshot_29-6-2025_15959_www.design.com.jpeg" 
+                  src="/logo.jpeg" 
                   alt="LaunchPad Suite" 
-                  className="h-12 w-12 object-contain"
+                  className="h-12 w-12 object-contain rounded-xl"
                 />
               </div>
             </div>

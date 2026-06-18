@@ -51,9 +51,9 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
         <div className="flex items-center justify-between h-16 px-4 border-b border-white/10">
           <div className="flex items-center space-x-3">
             <img 
-              src="/Screenshot_29-6-2025_15959_www.design.com.jpeg" 
+              src="/logo.jpeg" 
               alt="LaunchPad Suite" 
-              className="h-8 w-8 object-contain"
+              className="h-8 w-8 object-contain rounded-lg"
             />
             <span className="text-sm font-bold gradient-text">LaunchPad Suite</span>
           </div>
