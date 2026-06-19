@@ -3,6 +3,7 @@ import { Navigate } from 'react-router-dom';
 import { AlertCircle, Eye, EyeOff } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import { useLanguage } from '../contexts/LanguageContext';
+import { Logo } from '../components/Logo';
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -42,12 +43,8 @@ const Login: React.FC = () => {
         <div className="glass-card p-8">
           <div className="text-center mb-8">
             <div className="flex justify-center mb-6">
-              <div className="p-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl neon-glow">
-                <img 
-                  src="/logo.jpeg" 
-                  alt="LaunchPad Suite" 
-                  className="h-12 w-12 object-contain rounded-xl"
-                />
+              <div className="p-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl neon-glow">
+                <Logo size="md" className="rounded-2xl" />
               </div>
             </div>
             <h2 className="text-3xl font-extrabold gradient-text">
