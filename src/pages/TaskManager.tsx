@@ -35,12 +35,18 @@ const TaskManager: React.FC = () => {
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
   const [editingTaskId, setEditingTaskId] = useState<string | null>(null);
   const [editingStatus, setEditingStatus] = useState('');
-  const [newTask, setNewTask] = useState({
+  const [newTask, setNewTask] = useState<{
+    title: string;
+    description: string;
+    assigneeId: string;
+    dueDate: string;
+    priority: 'low' | 'medium' | 'high';
+  }>({
     title: '',
     description: '',
     assigneeId: '',
     dueDate: '',
-    priority: 'medium' as const
+    priority: 'medium'
   });
 
   const [tasks, setTasks] = useState<Task[]>([

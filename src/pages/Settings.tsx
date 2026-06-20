@@ -106,8 +106,11 @@ const Settings: React.FC = () => {
     password: ''
   });
 
-  const [newApiKey, setNewApiKey] = useState({
-    service: 'openai' as const,
+  const [newApiKey, setNewApiKey] = useState<{
+    service: 'openai' | 'replicate' | 'stability' | 'runway';
+    apiKey: string;
+  }>({
+    service: 'openai',
     apiKey: ''
   });
 

@@ -145,7 +145,7 @@ const TemplatePreview: React.FC<TemplatePreviewProps> = ({
                     <span className="text-sm font-medium text-gray-700">File Size</span>
                   </div>
                   <span className="text-gray-900">
-                    {template.fileSize ? formatFileSize(template.fileSize) : 'N/A'}
+                    {template.fileSize ? formatFileSize(typeof template.fileSize === 'number' ? template.fileSize : parseFloat(template.fileSize) || 0) : 'N/A'}
                   </span>
                 </div>
               </div>

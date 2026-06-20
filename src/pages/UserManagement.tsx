@@ -55,11 +55,16 @@ const UserManagement: React.FC = () => {
     }
   ]);
 
-  const [newUser, setNewUser] = useState({
+  const [newUser, setNewUser] = useState<{
+    name: string;
+    email: string;
+    company: string;
+    role: 'user' | 'admin';
+  }>({
     name: '',
     email: '',
     company: '',
-    role: 'user' as const
+    role: 'user'
   });
 
   const filteredUsers = users.filter(user => {
